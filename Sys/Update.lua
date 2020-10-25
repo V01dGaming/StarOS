@@ -15,5 +15,7 @@ end
 
 
 -- Start of Program
+Remove()
 shell.run("pastebin run" .. URL)
+shell.run("/Sys/OS.lua")
 -- End of Program
