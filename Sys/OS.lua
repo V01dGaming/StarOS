@@ -5,17 +5,20 @@ os.pullEvent = os.pullEventRaw
 local Option1 = "Notice Board"
 local Option2 = "System Info"
 local Option3 = "Reboot"
-local Option4 = "Admin Login"
+local Option4 = "Update"
+local Option5 = "Admin Login"
 
 local Notices = "1"
 local Info = "2"
 local Reboot = "3"
-local Admin = "4"
+local Update = "4"
+local Admin = "5"
 
 local Action1 = "/Apps/Notices.lua"
 local Action2 = "/Apps/Info.lua"
 local Action3 = "reboot"
-local Action4 = "/Sys/.Admin/Login.lua"
+local Action4 = "/Sys/Update.lua"
+local Action5 = "/Sys/.Admin/Login.lua"
 local InvalidInput = "/Sys/Errors/OSError.lua"
 -- End of Variables
 
@@ -54,8 +57,10 @@ elseif input == Info then
 	shell.run(Action2)
 elseif input == Reboot then
 	shell.run(Action3)
-elseif input == Admin then
+elseif input == Update then
 	shell.run(Action4)
+elseif input == Admin then
+	shell.run(Action5)
 else
 	shell.run(InvalidInput)
 end
