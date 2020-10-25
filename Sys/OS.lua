@@ -40,6 +40,7 @@ function Options()
 	print("2) " .. Option2)
 	print("3) " .. Option3)
 	print("4) " .. Option4)
+	print("5) " .. Option5)
 	print()
 end
 -- End of Functions
