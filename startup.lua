@@ -36,5 +36,5 @@ end
 
 -- Start of Program
 BootFull()
-shell.run("Sys/Update.lua")
+shell.run("Sys/OS.lua")
 -- End of Program
